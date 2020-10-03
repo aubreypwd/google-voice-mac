@@ -8,8 +8,8 @@
     "installsupport": "echo 'Run: [brew install graphicsmagick imagemagick] for additional DMG support.'",
     "postinstall": "npm run installsupport",
     "build": "npm run nativefier",
-    "nativefier": "./node_modules/.bin/nativefier --name 'Google Voice' --platform 'Mac' --min-width 1265 --min-height 1024  --width 1265 --height 1024 --flash --verbose --darwin-dark-mode-support --icon ./icon.png --internal-urls '.*(google)*.' --title-bar-style hidden --hide-window-frame --inject='node_modules/aubreypwd/nativefied-app-styles/header-draggable.css' 'https://voice.google.com/messages' ./build",
-    "dist": "npm run build && mkdir -p dist/ && ./node_modules/.bin/create-dmg ./build/Google Voice-darwin-x64/Google Voice.app --overwrite --dmg-title=Google Voice --identity='Aubrey Portwood' ./dist"
+    "nativefier": "./node_modules/.bin/nativefier --name 'Google Voice' --platform 'Mac' --min-width 1265 --min-height 1024  --width 1265 --height 1024 --flash --verbose --darwin-dark-mode-support --icon ./icon.png --internal-urls '.*(google)*.' --title-bar-style hidden --hide-window-frame --inject=node_modules/aubreypwd/nativefied-app-styles/header-draggable.css 'https://voice.google.com/messages' ./build",
+    "dist": "npm run build && mkdir -p dist/ && ./node_modules/.bin/create-dmg './build/Google Voice-darwin-x64/Google Voice.app' --overwrite --dmg-title='Google Voice' --identity='Aubrey Portwood' ./dist"
   },
   "author": "Aubrey Portwood",
   "license": "GPL-3.0-or-later",

@@ -1,0 +1,20 @@
+{
+  "name": "{SLUG}",
+  "version": "1.0.0",
+  "description": "An (unofficial) native MacOS App for {APPNAME}.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "installsupport": "echo 'Run: [brew install graphicsmagick imagemagick] for additional DMG support.'",
+    "postinstall": "npm run installsupport",
+    "build": "npm run nativefier",
+    "nativefier": "./node_modules/.bin/nativefier --name '{APPNAME}' --platform 'Mac' --min-width 1265 --min-height 1024  --width 1265 --height 1024 --flash --verbose --darwin-dark-mode-support --icon ./icon.png --internal-urls '.*(facebook|google)*.' '{URL}' ./build",
+    "dist": "npm run build && mkdir -p dist/ && ./node_modules/.bin/create-dmg ./build/{APPNAME}-darwin-x64/{APPNAME}.app --overwrite --dmg-title={APPNAME} --identity='Aubrey Portwood' ./dist"
+  },
+  "author": "Aubrey Portwood",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "create-dmg": "~5.3.0",
+    "nativefier": "~10.1.0"
+  }
+}

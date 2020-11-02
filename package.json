@@ -1,6 +1,6 @@
 {
   "name": "google-voice",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An (unofficial) native MacOS App for Google Voice.",
   "main": "index.js",
   "scripts": {

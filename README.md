@@ -14,7 +14,7 @@ brew update
 brew install google-voice
 ```
 
-## Upgrade
+### Upgrade
 
 ```bash
 brew update

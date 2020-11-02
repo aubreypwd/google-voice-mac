@@ -25,8 +25,6 @@ brew upgrade google-voice
 
 _Note, you must right-click the app to open, even after upgrading._
 
-----
-
 ## Development
 
 1. Clone repo

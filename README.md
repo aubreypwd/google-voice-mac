@@ -8,7 +8,7 @@ An (unofficial) native MacOS App for Google Voice.
 
 Download the `.dmg` from the [releases](releases) section and install per normal, or:
 
-## Install via [Homebrew](https://brew.sh)
+## [Homebrew](https://brew.sh)
 
 ```bash
 brew tap aubreypwd/homebrew-cask

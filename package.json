@@ -8,7 +8,7 @@
     "installsupport": "echo 'Run: [brew install graphicsmagick imagemagick] for additional DMG support.'",
     "postinstall": "npm run installsupport",
     "build": "npm run nativefier",
-    "nativefier": "./node_modules/.bin/nativefier --name 'Google Voice' --platform 'Mac' --width 1265 --height 1024 --flash --verbose --darwin-dark-mode-support --icon ./icon.png --internal-urls '.*(google)*.' --title-bar-style hidden --hide-window-frame --inject ui.css 'https://voice.google.com/messages' ./build",
+    "nativefier": "./node_modules/.bin/nativefier --user-agent 'Mozilla/5.0 (Windows NT 10.0; rv:74.0) Gecko/20100101 Firefox/74.0' --name 'Google Voice' --platform 'Mac' --width 1265 --height 1024 --flash --verbose --darwin-dark-mode-support --icon ./icon.png --internal-urls '.*(google)*.' --title-bar-style hidden --hide-window-frame --inject ui.css 'https://voice.google.com/messages' ./build",
     "dist": "npm run build && mkdir -p dist/ && ./node_modules/.bin/create-dmg './build/Google Voice-darwin-x64/Google Voice.app' --overwrite --dmg-title='Google Voice' --identity='Aubrey Portwood' ./dist/ || true && mv './dist/Google Voice 1.0.0.dmg' \"./dist/Google Voice $npm_package_version.dmg\""
   },
   "author": "Aubrey Portwood",

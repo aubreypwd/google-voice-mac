@@ -6,22 +6,9 @@ An (unofficial) native MacOS App for Google Voice.
 
 ## Install
 
-Download the `.dmg` from the [releases](releases) section and install per normal, or:
+Download the `.dmg` from the [releases](releases) section and install per normal, or install via:
 
-## [Homebrew](https://brew.sh)
-
-```bash
-brew tap aubreypwd/homebrew-cask
-brew update
-brew install google-voice
-```
-
-### Upgrade
-
-```bash
-brew update
-brew upgrade google-voice
-```
+- [Homebrew...](https://github.com/aubreypwd/homebrew-cask#google-voice)
 
 _Note, you must right-click the app to open, even after upgrading._
 
